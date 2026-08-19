@@ -16,7 +16,7 @@
 
 const CONFIG = {
 	LOCK_DELAY: 600,				// Lock time before another action is allowed - to avoid unintended double actions
-	BLE_ADDR: "7c:c6:b6:76:90:77",	// The BLE MAC address can be found ??somewhere??
+	BLE_ADDR: "aa:bb:cc:dd:ee:ff",	// The sender's BLE MAC address can be found e.g. with the Shelly BLE Debug app
 	DEBUG: false,				 	// Enable debug log messages
 	BUTTONS: 4,						// Number of buttons to expect
 	LED_CHANNEL: 3					// 0..3
