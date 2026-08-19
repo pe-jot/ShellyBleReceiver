@@ -1,0 +1,58 @@
+Data frame (example):
+02 01 06 10 16 d2 fc 44 00 7b 01 64 3a 00 3a 01 3a 00 3a 00
+
+
+ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19
+===========================================================
+02 01 06 10 16 d2 fc 44 00 7b 01 64 3a 00 3a 01 3a 00 3a 00
+|  |     |  |  |     |  |     |     |     |     |     |
+|  |     |  |  |     |  |     |     |     |     |     Button 4
+|  |     |  |  |     |  |     |     |     |     Button 3
+|  |     |  |  |     |  |     |     |     Button 2
+|  |     |  |  |     |  |     |     Button 1
+|  |     |  |  |     |  |     Battery level [%]
+|  |     |  |  |     |  Packet ID
+|  |     |  |  |     BTHome Device Information
+|  |     |  |  BTHome UUID (0xFCD2)
+|  |     |  Service Data
+|  |     Length
+|  Flags (AD type + data)
+Length
+
+
+BTHome header: (https://bthome.io/format/)
+========================
+02 01 06 
+|  |
+|  Type: Flags
+Length
+
+
+Service Data header:
+========================
+10 16 
+|  |
+|  Type: Service Data
+Length
+
+
+BTHome UUID (0xFCD2):
+========================
+d2 fc 
+
+
+BTHome Device Information:
+========================
+44
+
+
+Payload: (https://shelly-api-docs.shelly.cloud/docs-ble/Devices/BLU/wall_us)
+========================
+00 7b 01 64 3a 00 3a 01 3a 00 3a 00
+|     |     |     |     |     |
+|     |     |     |     |     Button 4
+|     |     |     |     Button 3
+|     |     |     Button 2
+|     |     Button 1
+|     Battery level [%]
+Packet ID
