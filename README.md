@@ -1,5 +1,5 @@
 # Shelly BLE Button to Dimmer - direct connection
-The idea is simple: Have a Shelly BLU RC Button 4 which controls a dimmer, like the Shelly Plus RGBW PM.
+The idea is simple: Have a [Shelly BLU RC Button 4](https://www.shelly.com/products/shelly-blu-rc-button-4) which controls a dimmer, like the [Shelly Plus RGBW PM](https://www.shelly.com/products/shelly-plus-rgbw-pm).
 
 ![Scheme drawing](shelly_ble_direct.png)
 
@@ -9,4 +9,4 @@ However, the goal was to have none of them but have a direct connection between 
 That's where Shelly Scripting comes in handy: The script starts a BLE scan, and its result is being processed in a callback function.  
 The rest is pretty straight-forward: Parse the BLE advertisement frame and execute the desired Shelly actions.
 
-Reference to the relevant documentation can be found inside the source.
+**Reference to the relevant documentation can be found inside the source.**
